@@ -23,21 +23,23 @@
                 <li><a href="login.html">Login</a></li>
                 <li><a href="signup.html">Sign Up</a></li>
                 <li><a href="about.html">About Us</a></li>
-                <!-- Internal Link within the page -->
                 <li><a href="#workout-schedule">Workout Table</a></li>
+                <li><button id="theme-btn" class="btn" onclick="toggleTheme()" style="padding: 6px 12px;">Dark Mode</button></li>
             </ul>
         </nav>
     </header>
 
     <div class="container">
-        <!-- Image Mapping linking to About Us -->
-        <div class="box" style="text-align: center;"> <!-- Inline CSS -->
-            <p style="margin-bottom: 8px; font-weight: bold;">Click the Banner Below to Learn More About Us</p>
-            <img src="https://placehold.co/650x130/1b4332/ffffff?text=FitTrack+-+Click+Here+For+About+Us" 
+        <!-- Image Mapping linking to About Us + Dynamic Picture & Text -->
+        <div class="box" style="text-align: center;">
+            <p style="margin-bottom: 8px; font-weight: bold;">Click the Banner Below to Visit About Us (Image Map)</p>
+            <img id="dynamic-banner" src="https://placehold.co/650x130/1b4332/ffffff?text=FitTrack+-+Click+Here+For+About+Us" 
                  alt="FitTrack Banner" usemap="#fitmap" style="border-radius: 8px; max-width: 100%;">
             <map name="fitmap">
                 <area shape="rect" coords="0,0,650,130" href="about.html" alt="About Us">
             </map>
+            <p id="dynamic-text" style="margin-top: 10px; font-weight: bold;">Welcome to FitTrack! Click the button below to change fitness tips dynamically.</p>
+            <button class="btn" onclick="changeBanner()" style="margin-top: 10px;">Change Picture & Tip (JS)</button>
         </div>
 
         <!-- Article -->
@@ -46,6 +48,14 @@
             <p style="margin-top: 8px;">FitTrack helps beginners and athletes organize their weekly gym workouts and daily protein intake in one simple place.</p>
             <p id="daily-tip" style="margin-top: 10px; font-weight: bold; color: #1b4332;"></p>
         </article>
+
+        <!-- Dynamic Elements Section (JavaScript Loop) -->
+        <section class="box">
+            <h2>Dynamic Exercise Generator (JavaScript Loop)</h2>
+            <p style="margin: 8px 0;">Click the button below to dynamically generate recommended exercises using JavaScript repetition:</p>
+            <button class="btn" onclick="loadRecommendedExercises()">Load Exercises List</button>
+            <ul id="dynamic-exercise-list" style="margin-left: 20px; margin-top: 12px; list-style: none;"></ul>
+        </section>
 
         <!-- Section & List -->
         <section class="box">

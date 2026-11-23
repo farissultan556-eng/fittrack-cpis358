@@ -10,6 +10,7 @@ body {
     background-color: #f8f9fa;
     color: #212529;
     padding-top: 75px;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 /* Layering (z-index) + Master Menu + Shadow */
@@ -20,8 +21,8 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 999; /* Layering technique */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25); /* Shadow effect */
+    z-index: 999;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -31,6 +32,7 @@ nav ul {
     list-style: none;
     display: flex;
     gap: 15px;
+    align-items: center;
 }
 
 nav ul li a {
@@ -54,11 +56,12 @@ nav ul li a:hover {
 
 .box {
     background-color: white;
-    border: 2px solid #d8f3dc; /* Border effect */
+    border: 2px solid #d8f3dc;
     border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Shadow effect */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
     padding: 20px;
     margin-bottom: 20px;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
 }
 
 .btn {
@@ -112,6 +115,13 @@ th {
     padding: 10px;
     border: 1px solid #bbb;
     border-radius: 5px;
+}
+
+.error-msg {
+    color: #d90429;
+    font-weight: bold;
+    margin-bottom: 12px;
+    display: none;
 }
 
 footer {
