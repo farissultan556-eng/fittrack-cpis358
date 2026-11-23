@@ -3,7 +3,7 @@
 <html lang="en">
 <head runat="server">
     <meta charset="UTF-8" />
-    <title>FitTrack - About Us</title>
+    <title> FitTrack - About Us </title>
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
